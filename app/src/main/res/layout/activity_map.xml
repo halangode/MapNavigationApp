@@ -29,6 +29,8 @@
             android:layout_height="wrap_content"
             android:hint="Source"
             android:inputType="none"
+            android:layout_margin="8dp"
+            android:textSize="15sp"
             android:focusable="false"
             android:id="@+id/sourceET"
             />
@@ -37,8 +39,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Destination"
+            android:layout_margin="8dp"
             android:inputType="none"
             android:focusable="false"
+            android:textSize="15sp"
             android:id="@+id/destinationET"
             />
     </android.support.design.widget.AppBarLayout>
@@ -66,8 +70,8 @@
         android:layout_width="match_parent"
         android:visibility="gone"
         android:layout_height="350dp"
-        app:behavior_peekHeight="40dp"
-        android:elevation="1dp"
+        app:behavior_peekHeight="50dp"
+        android:elevation="4dp"
         android:background="@android:color/white"
         app:layout_behavior="@string/bottom_sheet_behavior"
         >
@@ -83,7 +87,8 @@
                 android:layout_height="30dp"
                 android:id="@+id/directionsTitle"
                 android:gravity="center_horizontal"
-                android:textSize="17sp"
+                android:layout_alignParentTop="true"
+                android:textSize="22sp"
                 android:textStyle="bold"
                 android:text="Directions"
                 />
